@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="true">
+  <test thread-count="5" name="Testng" parallel="classes">
+    <classes>
+      <class name="testNg.AllLogins"/>
+      <class name="testNg.FacebookLogin"/>
+      <class name="testNg.VtigerLogin"/>
+      <class name="testNg.TwitterLogin"/>
+      <class name="testNg.ActiTimeLogin"/>
+    </classes>
+  </test> <!-- Testng -->
+</suite> <!-- Suite -->

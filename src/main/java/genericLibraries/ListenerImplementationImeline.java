@@ -1,0 +1,71 @@
+package genericLibraries;
+
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
+public class ListenerImplementationImeline implements ITestListener{
+	public ExtentReports report;
+	public ExtentTest test;
+	
+	
+
+	@Override
+	public void onTestStart(ITestResult result) {
+		test= report.createTest(result.getMethod().getMethodName());
+		
+	}
+
+	@Override
+	public void onTestSuccess(ITestResult result) {
+		test.pass(result.getMethod().getMethodName());
+	}
+
+	@Override
+	public void onTestFailure(ITestResult result) {
+		test.fail(result.getMethod().getMethodName());
+	}
+
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onTestSkipped(result);
+	}
+
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onTestFailedButWithinSuccessPercentage(result);
+	}
+
+	@Override
+	public void onTestFailedWithTimeout(ITestResult result) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onTestFailedWithTimeout(result);
+	}
+
+	@Override
+	public void onStart(ITestContext context) {
+		ExtentSparkReporter spark=new ExtentSparkReporter(",/ExtentReports/extent.html");
+		spark.config().setDocumentTitle("Framework");
+		spark.config().setReportName("Imeline");
+		spark.config().setTheme(Theme.DARK);
+		
+		report=new ExtentReports();
+		report.attachReporter(spark);
+		report.setSystemInfo("Author","Ragnor");
+		report.setSystemInfo("platform","windows");
+	}
+
+	@Override
+	public void onFinish(ITestContext context) {
+		// TODO Auto-generated method stub
+		ITestListener.super.onFinish(context);
+	}
+
+}

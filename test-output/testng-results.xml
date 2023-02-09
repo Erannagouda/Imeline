@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="83" started-at="2023-02-07T18:10:17 IST" finished-at="2023-02-07T18:10:17 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="83" started-at="2023-02-07T18:10:17 IST" finished-at="2023-02-07T18:10:17 IST">
+      <class name="distributedparallel.ThirdClass">
+        <test-method status="PASS" signature="thirdTest()[pri:0, instance:distributedparallel.ThirdClass@13eb8acf]" name="thirdTest" duration-ms="1" started-at="2023-02-07T18:10:17 IST" finished-at="2023-02-07T18:10:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdTest -->
+      </class> <!-- distributedparallel.ThirdClass -->
+      <class name="distributedparallel.SecondTest">
+        <test-method status="PASS" signature="secondTest()[pri:0, instance:distributedparallel.SecondTest@51c8530f]" name="secondTest" duration-ms="1" started-at="2023-02-07T18:10:17 IST" finished-at="2023-02-07T18:10:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+      </class> <!-- distributedparallel.SecondTest -->
+      <class name="distributedparallel.FifthTest">
+        <test-method status="PASS" signature="fifthTest()[pri:0, instance:distributedparallel.FifthTest@7403c468]" name="fifthTest" duration-ms="1" started-at="2023-02-07T18:10:17 IST" finished-at="2023-02-07T18:10:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fifthTest -->
+      </class> <!-- distributedparallel.FifthTest -->
+      <class name="distributedparallel.FourthClass">
+        <test-method status="PASS" signature="fourthTest()[pri:0, instance:distributedparallel.FourthClass@33723e30]" name="fourthTest" duration-ms="10" started-at="2023-02-07T18:10:17 IST" finished-at="2023-02-07T18:10:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fourthTest -->
+      </class> <!-- distributedparallel.FourthClass -->
+      <class name="distributedparallel.SixthTest">
+        <test-method status="PASS" signature="sixthTest()[pri:0, instance:distributedparallel.SixthTest@c81cdd1]" name="sixthTest" duration-ms="1" started-at="2023-02-07T18:10:17 IST" finished-at="2023-02-07T18:10:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sixthTest -->
+      </class> <!-- distributedparallel.SixthTest -->
+      <class name="distributedparallel.FirstTest">
+        <test-method status="PASS" signature="firstTest()[pri:0, instance:distributedparallel.FirstTest@43738a82]" name="firstTest" duration-ms="2" started-at="2023-02-07T18:10:17 IST" finished-at="2023-02-07T18:10:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTest -->
+      </class> <!-- distributedparallel.FirstTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
